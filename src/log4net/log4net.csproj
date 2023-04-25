@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net20;net35;net35-client;net40;net40-client;net45;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net20;net35;netstandard1.3;netstandard2.0</TargetFrameworks>
     <ProjectType>Local</ProjectType>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
@@ -63,12 +63,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net35'">
     <DefineConstants>NET_2_0;NET_3_5</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(TargetFramework)'=='net40'">
-    <DefineConstants>NET_2_0;NET_4_0</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
-    <DefineConstants>NET_2_0;NET_4_0;NET_4_5</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <BaseAddress>285212672</BaseAddress>
